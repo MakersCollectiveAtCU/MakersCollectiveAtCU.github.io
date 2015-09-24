@@ -1,0 +1,244 @@
+html, body	{
+	width:100%;
+	height: 100%;
+	margin: 0;				/* gets rid of the white space on the edge of the window - divs are actually 100% of horizon */
+	display: inline-block;
+	font-family: helvetica, arial, sans-serif;
+	font-weight: 100;
+}
+
+p	{
+	margin: 0px;			/* sets the margins for the paragpraph tags to 0 */
+	font-family: helvetica, arial, sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+}
+
+h1	{
+	font-weight: 100;
+}
+
+h2 {
+	font-weight: 100;
+	font-size: 2em;
+	color: #4e4a4a;
+}
+
+a:link	{
+	color:black;
+	text-decoration: none;
+}
+
+a:hover	{
+	color:gray;
+	text-decoration: none;
+}
+
+a:visited	{
+	color:black;
+	text-decoration: none;
+}
+
+
+
+#navigation	{
+	z-index: 1;
+	position:fixed;
+	text-align: center;
+	background-color: white;
+	width:100%;
+	height: 58px;
+	margin-top: 92px;
+
+}
+
+#logobar	{
+	z-index: 1;
+	background-color: white;
+	position:fixed;
+	text-align: center;
+	width:100%;
+	height:92px;
+}
+
+#navbar	{
+	width:auto;
+	height: 25px; 			/* moves the div up and down from the logo */
+
+}
+
+#logo	{
+	margin-top: 15px;
+}
+
+.navitem	{
+	width: 15%;
+	display: inline-block;
+}
+
+#aboutbutton{width: 12%;display: inline-block;z-index: 3;}
+#calendarbutton{width: 12%;display: inline-block;}
+#newsbutton{width: 12%;display: inline-block;}
+#gallerybutton{width: 12%;display: inline-block;}
+
+#content	{
+	z-index: 0;
+	width: auto;
+	height: 80%;
+	margin-top: 150px;
+}
+
+.contentbox	{
+	width: 100%;
+	height: 800px;
+}
+
+#calendarbox	{
+	position: absolute;
+	width:70%;
+	height:600px;
+	top: 850px;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+#aboutbackground	{
+	position:absolute;
+	top: 150px;
+	width:100%;
+	height:700px;
+	overflow: hidden;
+	text-align: center;
+}
+
+#aboutbackgroundline	{
+	background-color:black;
+	width:1px;
+	height:625px;
+	display: inline-block;
+}
+
+#about1 {
+    height:600px;
+    width:400px;
+    margin:5%;
+    text-align: justify;
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+}
+	
+#about2 {
+	height:600px;
+    width:400px;
+    text-align: left;
+    margin: 5%;
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+#about1 h2 {color:black;margin: 25px; font-weight: 100;text-decoration: underline;}
+#about1 p {color:black;font-size: 14px;margin: 25px; line-height: 150%;}
+#about2 h2 {color:black;margin: 25px; font-weight: 100;    text-decoration: underline;}
+#about2 h3 {color:black;margin: 25px; font-weight: 700;}
+#about2 h4 {color:black;margin: 25px; font-weight: 600;}
+#about2 p {color:black;font-size: 14px;margin: 25px; line-height: 150%;}
+
+
+
+#news {
+	
+	color:white;
+	background-color: rgba(0,0,0,0.6);
+    height:400px;
+    width:44%;
+    float:left;
+    margin-left: 4%;
+    margin-top: 100px;
+}
+
+#news h2 {color:white;margin: 25px; font-weight: 800;}
+	
+#news p {color:white;margin: 25px; font-weight: 100; line-height: 150%;}
+
+#newsbox	{
+	position:absolute;
+	background: url("../images/ledfade.JPG");
+	background-size: cover;
+	width:100%;
+	height:800px;
+	top: 1650px;
+}
+
+#gallerybackground	{
+	position:absolute;
+	top: 1450px;
+	width:100%;
+	height:700px;
+	padding-bottom: 100px;
+	overflow: hidden;
+}
+
+#gallerybox	{
+	color:white;
+    height:600px;
+    width:98%;
+    float:left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+
+#gallerybox h2 {color:black;margin-top: 25px; font-weight: 100;text-decoration: underline;}
+#gallerybox p {color:black;font-size: 18px;margin: 25px; line-height: 250%;}
+
+.galleryitem	{
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+#imagebox	{
+	width:1200px;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+/* mailchimp css */
+
+#mc_embed_signup	{
+position: relative;
+float: left;
+font:14px Helvetica,Arial,sans-serif;
+font-weight: 100;
+width:500px;
+height: auto;
+text-align: left;
+margin-left: 25px;
+top:-3px;
+color: black;
+}
+
+#mc-embedded-subscribe	{
+	font-size: 16px;
+	font-weight: 100;
+	font-family: helvetica, arial, sans-serif;
+	color:black;
+	border: 0;
+	cursor: pointer;
+	margin-top: 25px;
+}
+
+/* ANCHORS FOR SCROLLING ISSUE */
+
+#aboutanchor	{height:0px;margin-top: -150px;}
+#calendaranchor	{height:0px;margin-top: -50px;}
+#galleryanchor	{height:0px;margin-top: 150px;}
